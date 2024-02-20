@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@font-face {
+    font-family: 'Cursive';
+    src: url('../fontes/Cherolina.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #B1614B;
+    --cor1: #865C50;
+    --cor2: #5C4B46;
+    --cor3: #332E2D;
+    --cor4: #332724;
+
+    --fonte-padrão: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Playfair Display', Arial;
+    --fonte-cursive: 'Cursive';
+}
+
+*{ 
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #c7c5e3;
+    font-family: var(--fonte-padrão);
+}
+
+header {
+    background-image: linear-gradient(to top, var(--cor1), var(--cor0));
+    min-height: 150px;
+    text-align: center;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-cursive);
+    font-size: 50px;
+    padding-top: 40px;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.555);
+
+}
+
+header > p {
+    color: white;
+}
+
+nav {
+    background-color: var(--cor1);
+    color: white;
+    padding: 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.56);
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+
+}
+
+nav > a:hover {
+    background-color: var(--cor0);
+    color: white;
+    border-radius: 5px;
+   
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.477);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+main h1 {
+    color: var(--cor4)
+    font-family: var(--fonte-destaque)
+
+}
+
+main p {
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor0);
+}
+
+main img {
+    width: 100%;
+}
+
+aside {
+    background-color: var(--cor1);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: justify;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.588);
+}
+
+aside > h1 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+div.video {
+    background-color: var(--cor2);
+    margin: auto;
+    margin: 0px -10px 15px -10px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+footer {
+    background-color: var(--cor3);
+    color: white;
+    font-family: var(--fonte-destaque);
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
